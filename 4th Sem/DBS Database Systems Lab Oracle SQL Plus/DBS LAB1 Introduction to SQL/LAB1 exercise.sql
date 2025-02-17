@@ -47,7 +47,7 @@ EMP_NAME
 Yash                                                                            
 
 SQL> -- add a column named salary to employee table
-SQL> ALTER TABLE employee ADD salary NUMBER(10);
+SQL> ALTER TABLE employee ADD salary NUMBER(10); --important
 
 Table altered.
 
