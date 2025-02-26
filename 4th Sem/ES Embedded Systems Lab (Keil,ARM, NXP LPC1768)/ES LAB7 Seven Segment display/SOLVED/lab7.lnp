@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\startup_lpc17xx.o"
+".\solved.o"
+".\system_lpc17xx.o"
+--strict --scatter ".\lab7.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\lab7.map" -o .\lab7.axf

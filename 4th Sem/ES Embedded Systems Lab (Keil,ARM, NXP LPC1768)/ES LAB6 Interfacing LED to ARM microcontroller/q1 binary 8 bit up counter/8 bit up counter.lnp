@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\startup_lpc17xx.o"
+".\8 bit up count.o"
+".\system_lpc17xx.o"
+--strict --scatter ".\8 bit up counter.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\8 bit up counter.map" -o ".\8 bit up counter.axf"
