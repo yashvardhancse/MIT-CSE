@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\startup_lpc17xx.o"
+".\system_lpc17xx.o"
+".\adc channel 5 to lcd.o"
+--strict --scatter ".\solved lab10.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\solved lab10.map" -o ".\solved lab10.axf"

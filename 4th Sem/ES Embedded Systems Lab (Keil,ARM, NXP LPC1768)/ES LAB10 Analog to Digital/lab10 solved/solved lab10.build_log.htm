@@ -1,0 +1,142 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\ES_B2\Documents\B2_55\es lab10\lab10 solved\solved lab10.uvproj
+Project File Date:  03/19/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+Program Size: Code=7452 RO-data=452 RW-data=4 ZI-data=612  
+FromELF: creating hex file...
+".\solved lab10.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+ LCD.c...
+adc channel 5 to LCD.c(139): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(vtg, "%3.2fV", in_vtg);  
+adc channel 5 to LCD.c(141): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(dval, "%x", adc_temp); 
+adc channel 5 to LCD.c(158): warning:  #1-D: last line of file ends without a newline
+    
+adc channel 5 to LCD.c: 3 warnings, 0 errors
+"adc channel 5 to LCD.c" - 0 Error(s), 3 Warning(s).
+LCD.c(139): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(vtg, "%3.2fV", in_vtg);  
+adc channel 5 to LCD.c(141): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(dval, "%x", adc_temp); 
+adc channel 5 to LCD.c(158): warning:  #1-D: last line of file ends without a newline
+    
+adc channel 5 to LCD.c: 3 warnings, 0 errors
+"adc channel 5 to LCD.c" - 0 Error(s), 3 Warning(s).
+te(void)" (declared at line 62 of "C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h")
+  SystemCoreClockUpdate(); 
+adc channel 5 to LCD.c(112): error:  #18: expected a ")"
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #79: expected a type specifier
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #101: "LPC_SC_TypeDef" has already been declared in the current scope
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #130: expected a "{"
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(128): warning:  #12-D: parsing restarts here after previous syntax error
+   { 
+adc channel 5 to LCD.c(133): error:  #20: identifier "adc_temp" is undefined
+    adc_temp = LPC_ADC->ADDR5; 
+adc channel 5 to LCD.c(136): error:  #29: expected an expression
+        in_vtg = (((float)adc_temp * (float)Ref_Vtg))/((float)Full_Scale); 
+adc channel 5 to LCD.c(138): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(vtg, "%3.2fV", in_vtg);  
+adc channel 5 to LCD.c(140): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(dval, "%x", adc_temp); 
+adc channel 5 to LCD.c(156): error:  #169: expected a declaration
+  }
+adc channel 5 to LCD.c(157): warning:  #1-D: last line of file ends without a newline
+    
+adc channel 5 to LCD.c: 9 warnings, 13 errors
+".\solved lab10.axf" - 13 Error(s), 9 Warning(s).
+Target not created
+compiling adc channel 5 to LCD.c...
+adc channel 5 to LCD.c(139): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(vtg, "%3.2fV", in_vtg);  
+adc channel 5 to LCD.c(141): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(dval, "%x", adc_temp); 
+adc channel 5 to LCD.c(158): warning:  #1-D: last line of file ends without a newline
+    
+adc channel 5 to LCD.c: 3 warnings, 0 errors
+"adc channel 5 to LCD.c" - 0 Error(s), 3 Warning(s).
+D.c(112): error:  #79: expected a type specifier
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #101: "LPC_SC_TypeDef" has already been declared in the current scope
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #130: expected a "{"
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(128): warning:  #12-D: parsing restarts here after previous syntax error
+   { 
+adc channel 5 to LCD.c(133): error:  #20: identifier "adc_temp" is undefined
+    adc_temp = LPC_ADC->ADDR5; 
+adc channel 5 to LCD.c(136): error:  #29: expected an expression
+  in_vtg = (((float)adc_temp * (float)Ref_Vtg))/((float)Full_Scale); 
+adc channel 5 to LCD.c(138): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(vtg, "%3.2fV", in_vtg);  
+adc channel 5 to LCD.c(140): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(dval, "%x", adc_temp); 
+adc channel 5 to LCD.c(156): error:  #169: expected a declaration
+  }
+adc channel 5 to LCD.c(157): warning:  #1-D: last line of file ends without a newline
+    
+adc channel 5 to LCD.c: 9 warnings, 13 errors
+"adc channel 5 to LCD.c" - 13 Error(s), 9 Warning(s).
+compiling adc channel 5 to LCD.c...
+adc channel 5 to LCD.c(102): warning:  #174-D: expression has no effect
+adc channel 5 to LCD.c(103): error:  #65: expected a ";"
+  unsigned long adc_temp; 
+adc channel 5 to LCD.c(104): error:  #268: declaration may not appear after executable statement in block
+  unsigned int i; 
+adc channel 5 to LCD.c(104): error:  #67: expected a "}"
+  unsigned int i; 
+adc channel 5 to LCD.c(110): warning:  #1295-D: Deprecated declaration SystemInit - give arg types
+  SystemInit(); 
+adc channel 5 to LCD.c(110): warning:  #77-D: this declaration has no storage class or type specifier
+  SystemInit(); 
+adc channel 5 to LCD.c(110): error:  #147: declaration is incompatible with "void SystemInit(void)" (declared at line 51 of "C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h")
+  SystemInit(); 
+adc channel 5 to LCD.c(111): warning:  #1295-D: Deprecated declaration SystemCoreClockUpdate - give arg types
+  SystemCoreClockUpdate(); 
+adc channel 5 to LCD.c(111): warning:  #77-D: this declaration has no storage class or type specifier
+  SystemCoreClockUpdate(); 
+adc channel 5 to LCD.c(111): error:  #147: declaration is incompatible with "void SystemCoreClockUpdate(void)" (declared at line 62 of "C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h")
+  SystemCoreClockUpdate(); 
+adc channel 5 to LCD.c(112): error:  #18: expected a ")"
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #79: expected a type specifier
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #101: "LPC_SC_TypeDef" has already been declared in the current scope
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(112): error:  #130: expected a "{"
+  LPC_SC->PCONP |= (1<<15);    //Power for GPIO block 
+adc channel 5 to LCD.c(128): warning:  #12-D: parsing restarts here after previous syntax error
+   { 
+adc channel 5 to LCD.c(133): error:  #20: identifier "adc_temp" is undefined
+    adc_temp = LPC_ADC->ADDR5; 
+adc channel 5 to LCD.c(136): error:  #29: expected an expression
+        in_vtg = (((float)adc_temp * (float)Ref_Vtg))/((float)Full_Scale); 
+adc channel 5 to LCD.c(138): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(vtg, "%3.2fV", in_vtg);  
+adc channel 5 to LCD.c(140): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+    sprintf(dval, "%x", adc_temp); 
+adc channel 5 to LCD.c(156): error:  #169: expected a declaration
+  }
+adc channel 5 to LCD.c(157): warning:  #1-D: last line of file ends without a newline
+    
+adc channel 5 to LCD.c: 9 warnings, 13 errors
+"adc channel 5 to LCD.c" - 13 Error(s), 9 Warning(s).
